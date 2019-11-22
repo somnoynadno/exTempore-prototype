@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto&display=swap" rel="stylesheet"> 
+    <script src="/static/js/test.js"></script>
     <title>exTempore</title>
 </head>
 <body>
@@ -27,30 +28,23 @@
     </div>
     <div class="content-wrapper">
         <div class="course-content">
-            <img src="/static/img/python.png" style="width: 200px; float: right; margin-top: 20px"/>
             <h1>Встроенные типы и операторы</h1>
-            <h2>Типы данных</h2>
-            К стандартным типам данных в Python относят:
-            <ul>
-                <li>Числа (Numbers)</li>
-                <li>Строка (String)</li>
-                <li>Список (List)</li>
-                <li>Кортеж (Tuple)</li>
-                <li>Словарь (Dictionary)</li>
-                <li>Сет (Set)</li>
-            </ul>
-            <h2>Операторы</h2>
-            Арифметические операторы в Python:
-            <ul>
-                <li>Сложение -> +</li>
-                <li>Умножение -> *</li>
-                <li>Вычитание -> -</li>
-                <li>Деление -> /</li>
-                <li>Деление по модулю -> %</li>
-                <li>Возведение в степень -> **</li>
-                <li>Целочисленное деление -> //</li>
-            </ul>
-            <form action="/courses/1/3-test.html">
+            <form action="javascript:;" onsubmit="checkAnswer(this)">
+                <fieldset> <legend><b>Оператор возведения в степень в Python:</b></legend>
+                <label><input type="radio" name="operator" id="option1" value="false"> ^ </label><br>
+                <label><input type="radio" name="operator" id="option2" value="true"> ** </label><br>
+                <label><input type="radio" name="operator" id="option3" value="false"> @ </label><br>
+                <label><input type="radio" name="operator" id="option4" value="false"> $ </label><br>
+                </fieldset>
+                <input type="submit" value="Проверить">
+            </form>
+            <div id="correct-div" style="visibility: hidden;">
+                Correct!
+            </div>
+            <div id="wrong-div" style="visibility: hidden;">
+                Wrong!
+            </div>
+            <form action="/courses/1/4.html">
                 <button type="submit">Далее</button>
             </form>
         </div>
