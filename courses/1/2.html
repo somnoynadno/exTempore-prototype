@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto&display=swap" rel="stylesheet"> 
+    <title>exTempore</title>
+</head>
+<body>
+    <div class="main-header">
+        <div class="logo">
+            <img src="/static/img/logo.png" />
+            <div class="extempore"><i>Ex Tempore</i></div>
+        </div>
+        <div class="container">
+            <div class="header-element">
+                <a href="/index.html">Все курсы</a>
+            </div>
+            <div class="header-element">
+                <a href="/index.html">Мои курсы</a>
+            </div>
+            <div class="header-element">
+                <a href="/profile.html">Мой профиль</a>
+            </div>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="course-content">
+            <img src="/static/img/python.png" style="width: 200px; float: right; margin-top: 20px"/>
+            <h1>Синтаксис языка</h1>
+            Cинтаксис Python крайне прост и умещается в небольшой абзац:
+            <ol>
+                <li>Конец строки — конец инструкции.</li>
+                <li>Вложенные инструкции отделяются от основных отступами т.е. разным их количеством.</li>
+                <li>Вложенные инструкции всегда пишутся после основной отделяясь от неё двоеточием.</li>
+            </ol>
+            Ниже приведён пример всего вышесказанного:
+            <br>
+            <br>
+            <code>
+            print("Hi, i am Python!") # вывод строки Hi, i am Python!
+            <br>
+            if 3.14 < 1592: # условный оператор (будет рассмотрен в след. уроках)
+            <br>
+            print("good") # и опять выводим сообщение
+            <br>
+            print("work") # и еще
+            </code>
+            <br>
+            <br>
+            Ну и пара частных случаев:
+            <ul>
+                <li>Можно писать несколько инструкций в одной строке. Однако это понижает удобочитаемость:
+                <br>
+                <code>x = 1.14; y = 2.0014; print(x + y)</code>
+                <br>
+                </li>
+                <li>Можно писать одну инструкцию в нескольких строках. Для этого ее нужно заключить в пару круглых, квадратных или фигурных скобок:
+                <br>
+                <code>
+                if (5 > 1 and 1 < 2 and
+                8 == 8 and "good" != "bad"):
+                print("it is true")
+                </code>
+                <br>
+                </li>
+                <li>
+                Вложенная инструкция может писаться в одной строке основной, если она не имеет своих вложенных инструкций:
+                <br>
+                <code>if (5 > 1): print("it is true")</code>
+                <br>
+                </li>
+            </ul>
+            <form action="/courses/1/3.html">
+                <button type="submit">Далее</button>
+            </form>
+        </div>
+    </div>
+    <div class="main-footer"></div>
+</body>
+</html>
