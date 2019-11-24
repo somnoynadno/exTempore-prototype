@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto&display=swap" rel="stylesheet">
+    <script src="/static/js/c3_codes.js"></script>
+    <title>exTempore</title>
+</head>
+<body>
+<div class="main-header">
+    <div class="logo">
+        <img src="/static/img/logo.png"/>
+        <div class="extempore"><i>Ex Tempore</i></div>
+    </div>
+    <div class="container">
+        <div class="header-element">
+            <a href="/index.html">Все курсы</a>
+        </div>
+        <div class="header-element">
+            <a href="/index.html">Мои курсы</a>
+        </div>
+        <div class="header-element">
+            <a href="/profile.html">Мой профиль</a>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="course-content">
+        <img src="/static/img/python.png" style="width: 200px; float: right; margin-top: 20px"/>
+        <h1>Многостраничный парсинг</h1>
+        Сформулируем тз:
+        <br><b>
+            Необходимо получить все ссылки с первой страницы новостей поисковика
+        </b><br>
+
+        Решение:
+        <br><pre><code id="e15"></code></pre>
+        Разберем это решение: <br>
+        <code>driver.get('https://google.com')</code>
+        переходим на страницу google.com<br>
+        <code>driver.execute_script</code>
+        выполняем javascript код<br>
+        <code>inp = window.document.getElementsByName('q')[0];</code>
+        находим поле ввода запроса<br>
+        <code>inp.value = '%s';</code>
+        вводим значение word в это поле<br>
+        Дальше находим кнопку и выполняем поиск (кликаем по кнопке)<br>
+        Наконец находим кнопку "новости" и нажимаем на неё.
+        На последней странице используем поиск по тегу а, чтобы распечатать все ссылки.
+
+        <form action="/index.html">
+            <button type="submit">Далее</button>
+        </form>
+    </div>
+</div>
+<div class="main-footer"></div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto&display=swap" rel="stylesheet">
+    <script src="/static/js/c3_codes.js"></script>
+    <title>exTempore</title>
+</head>
+<body>
+<div class="main-header">
+    <div class="logo">
+        <img src="/static/img/logo.png"/>
+        <div class="extempore"><i>Ex Tempore</i></div>
+    </div>
+    <div class="container">
+        <div class="header-element">
+            <a href="/index.html">Все курсы</a>
+        </div>
+        <div class="header-element">
+            <a href="/index.html">Мои курсы</a>
+        </div>
+        <div class="header-element">
+            <a href="/profile.html">Мой профиль</a>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="course-content">
+        <img src="/static/img/python.png" style="width: 200px; float: right; margin-top: 20px"/>
+        <h1>Selenium</h1>
+        Библиотека Beautiful Soup хороша для парсинга одного сайта, однако,
+        если ваша задача посетить несколько страниц сайта, возможно, пройти регистрацию,
+        или даже прокрутить страницу для дозагрузки контента, вам понадобятся более
+        сложные сложные инструменты, например с помощью библиотеки requests можно
+        вкладывать headers в запрос, а с помощью консоли разработчика, например, в Chrome
+        вы можете отслеживать запросы javascript, которые выполняются для получения
+        данных.<br>Однако такой способ может быть весьма трудозатратным. Давайте рассмотрим
+        инструмент selenium.
+        <br><pre><code id="e10"></code></pre>
+        Selenium поддерживается многими языками, в частности python.
+        Чтобы его установить выполните команду:
+        <br><pre><code id="e11"></code></pre>
+        Вам необходимо скачать webdriver на свой компьютер по
+        <a href="https://chromedriver.storage.googleapis.com/index.html?path=77.0.3865.40/">
+            этой ссылке</a>
+        Инициализация драйвера:
+        <br><pre><code id="e12"></code></pre>
+        Чтобы выключить браузер:
+        <br><pre><code id="e13"></code></pre>
+        Напишем функцию для получения html кода страницы:
+        <br><pre><code id="e14"></code></pre>
+        Дальше этот код вы можете парсить с помощью библиотеки Beautiful Soup
+        или используя driver.execute_script продолжить работу на странице.
+        В следующем уроке мы напишем более сложный пример.
+
+        <form action="/courses/3/6.html">
+            <button type="submit">Далее</button>
+        </form>
+    </div>
+</div>
+<div class="main-footer"></div>
+</body>
+</html>
