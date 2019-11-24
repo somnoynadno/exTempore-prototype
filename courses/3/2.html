@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Roboto&display=swap" rel="stylesheet">
+    <script src="/static/js/c3_codes.js"></script>
+    <title>exTempore</title>
+</head>
+<body>
+<div class="main-header">
+    <div class="logo">
+        <img src="/static/img/logo.png"/>
+        <div class="extempore"><i>Ex Tempore</i></div>
+    </div>
+    <div class="container">
+        <div class="header-element">
+            <a href="/index.html">Все курсы</a>
+        </div>
+        <div class="header-element">
+            <a href="/index.html">Мои курсы</a>
+        </div>
+        <div class="header-element">
+            <a href="/profile.html">Мой профиль</a>
+        </div>
+    </div>
+</div>
+<div class="content-wrapper">
+    <div class="course-content">
+        <img src="/static/img/python.png" style="width: 200px; float: right; margin-top: 20px"/>
+        <h1>Про html</h1>
+        Прежде, чем говорить про синтаксический анализ (далее парсинг) сайтов,
+        давайте посмотрим как выглядят html документы и как можно получить этот
+        текст с помощью языков программирования.
+        <br/>
+        Чтобы получить код, на основании которого браузер отражает web страницу
+        вы нажмите (ctrl + U), в Chrome или Yandex Browser.
+        <br/>
+        Например, код <a href="_example1.html">этой странички</a>:
+        <pre><code id="e1"></code></pre>
+        <br>
+        Вы можете подробнее прочитать про XML и HTML. Пока что важно знать,
+        про структурную единицу - теги. Полезная информация находится в них,
+        а сами теги дают информацию, как изображать данный блок текста.
+        <br>Например,
+        <pre><code id="e2"></code></pre>
+        <br>
+        Выглядит так: <h1>Header 1</h1>
+        Второй вариант для человека обычно более понятен, однако в для компьютера
+        и, в частности, в коде легче работать с исходным html кодом, чтобы его получить
+        вопользуемся библиотекой requests.
+        <form action="/courses/3/3.html">
+            <button type="submit">Далее</button>
+        </form>
+    </div>
+</div>
+<div class="main-footer"></div>
+</body>
+</html>
+<!-- todo: добавить ссылки на браузеры и API (1.html) requests-->
