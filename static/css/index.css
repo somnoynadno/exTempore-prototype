@@ -74,6 +74,13 @@ body
     box-shadow: 1px 1px 3px black;
 }
 
+.main-header .header-element:hover 
+{
+    background-color: rgba(221, 221, 248, 0.9);
+    transition: 1s;
+}
+
+
 .main-header .header-element a
 {
     display: block;
@@ -93,6 +100,8 @@ body
 
     box-shadow: 0 0 5px rgba(0,0,0,0.8);
     border-radius: 25px;
+
+    transition: 2s;
 }
 
 .programming
@@ -146,10 +155,8 @@ body
 
 .course-container button
 {
-    float: right;
     font-size: 18pt;
     margin-right: 15px;
-    margin-top: 155px;
 
     color: rgba(0, 0, 0, 0.9);
     background-color: lemonchiffon;
@@ -158,6 +165,34 @@ body
     border: 1px solid gray;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
+}
+
+.course-container button:hover
+{
+    background-color: #dfcaec;
+    transition: 1s;
+}
+
+
+.course-container .right-panel
+{
+    float: right;
+    height: 100%;
+}
+
+.course-container .sc
+{
+    text-align: center;
+    height: 60%;
+}
+
+.course-container .sc img
+{
+    float: right;
+    margin: 10px 40px;
+    height: 124px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    border-radius: 3px;
 }
 
 .clearfix
@@ -199,6 +234,8 @@ body
 
     box-shadow: 0 0 5px rgba(0,0,0,0.8);
     border-radius: 25px;
+
+    transition: 2s;
 }
 
 .user-image img
@@ -212,6 +249,11 @@ body
     border-radius: 50%;
 
     float: left;
+}
+
+.user-info 
+{
+    transition: 2s;
 }
 
 .user-info .name
@@ -230,6 +272,8 @@ body
 {    
     text-align: center;
     font-size: 20pt;
+
+    transition: 2s;
 }
 
 .user-stats img
