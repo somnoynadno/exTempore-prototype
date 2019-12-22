@@ -190,6 +190,56 @@ body
     margin-bottom: 15px;
 }
 
+.profile-wrapper
+{
+    width: 900px;
+    height: 600px;
+
+    margin: 20px auto;
+
+    box-shadow: 0 0 5px rgba(0,0,0,0.8);
+    border-radius: 25px;
+}
+
+.user-image img
+{
+    width: 200px;
+    height: 200px;
+    
+    margin: 40px;
+    margin-right: 60px;
+    box-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    border-radius: 50%;
+
+    float: left;
+}
+
+.user-info .name
+{
+    font-size: 26pt;
+    padding-top: 50px;
+}
+
+.user-info .job
+{
+    font-size: 14pt;
+    padding-top: 16px;
+}
+
+.user-stats
+{    
+    text-align: center;
+    font-size: 20pt;
+}
+
+.user-stats img
+{
+    margin: 20px 50px;
+    width: 350px;
+    height: auto;
+}
+
+
 /*
 orange color    #ff641f
 red color       #eb1847
